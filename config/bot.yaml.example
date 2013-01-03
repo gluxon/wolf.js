@@ -1,0 +1,22 @@
+# Server connection
+server: irc.freenode.net
+port: 6667
+password: 
+
+# Bot/User Information
+nick: jswolf
+mode: gluxon.com
+unused: unused
+realname: sherly
+password: password
+
+# Default game channel
+channel: "#wolf.js"
+
+# List of admins
+admins: 
+ - ~gluxon@unaffiliated/gluxon
+ - ~Snuupy@unaffiliated/snuupy
+ - ~ceradon@wikimedia/Ceradon
+ - ~mithadon@unaffiliated/mithadon
+ - ishanyx@junethack/teamsplat/ishanyx

@@ -1,0 +1,18 @@
+{
+  "name": "wolf.js",
+  "version": "0.1.0",
+  "author": "gluxon <gluxon@gluxon.com>",
+  "description": "A werewolf bot written in the Node.js framework.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gluxon/wolf.js.git"
+  },
+  "dependencies" : {
+    "irc"     : "0.3.x",
+    "js-yaml" : "1.0.x"
+  },
+  "license": "GPLv3",
+  "engines": {
+    "node": ">=0.8"
+  }
+}
