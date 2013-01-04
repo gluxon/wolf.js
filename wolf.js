@@ -5,9 +5,18 @@ require('js-yaml'); // JavaScript YAML parser (for settings)
 var settings = require('./config/bot.yaml');
 
 var client = new irc.Client(settings.server, settings.nick, {
-	channels: [settings.channel],
+    userName: settings.username,
+    realName: settings.realname,
+    port: settings.port,
+    channels: [settings.channel],
 });
 
-client.addListener('message', function (from, to, message) {
-	console.log(from + ' => ' + to + ': ' + message);
+// Original IRC output to console (for debugging)
+client.addListener('raw', function (message) {
+	if (message.server) {
+		console.log(':' + message.server + ' ' + message.command + ' ' + message.args.join(' :') );
+	} else {
+		console.log(':' + message.nick + '!' + message.user + '@' + message.host + ' ' +
+		message.command + ' ' + message.args.join(' :') );
+	}
 });
