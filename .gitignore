@@ -8,4 +8,4 @@ node_modules
 .project
 
 # Configuration
-config/settings.yaml
+config/bot.yaml
