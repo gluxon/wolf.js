@@ -5,10 +5,10 @@ require('js-yaml'); // JavaScript YAML parser (for settings)
 var settings = require('./config/bot.yaml');
 
 var client = new irc.Client(settings.server, settings.nick, {
-    userName: settings.username,
-    realName: settings.realname,
-    port: settings.port,
-    channels: [settings.channel],
+	userName: settings.username,
+	realName: settings.realname,
+	port: settings.port,
+	channels: [settings.channel],
 });
 
 // Original IRC output to console (for debugging)
