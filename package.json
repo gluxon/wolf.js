@@ -11,7 +11,7 @@
     "irc"     : "0.3.x",
     "js-yaml" : "1.0.x"
   },
-  "license": "GPLv3",
+  "license": "MPL",
   "engines": {
     "node": ">=0.8"
   }
