@@ -28,4 +28,4 @@ detective_plural: detectives
 ghost_pural: ghosts
 villager_plural: villagers
 
-start: %1 has started a game of Werewolf. Type "!join" to join. Type "!start" to start the game. Type "!wait" to increase join wait time.
+start: $1$ has started a game of Werewolf. Type "!join" to join. Type "!start" to start the game. Type "!wait" to increase join wait time.
