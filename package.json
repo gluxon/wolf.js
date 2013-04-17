@@ -9,7 +9,7 @@
   },
   "dependencies" : {
     "irc"     : "0.3.x",
-    "js-yaml" : "1.0.x"
+    "js-yaml" : "2.0.x"
   },
   "license": "MPL",
   "engines": {
