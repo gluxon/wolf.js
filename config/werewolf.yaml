@@ -1,0 +1,24 @@
+# Game start delays
+game_wait: 60 #s
+game_add_wait: 20 #s
+game_add_wait_limit: 2
+
+# Rate limits
+wait_ping: 60 * 2 #s
+wait_stats: 60 * 1/2 #s
+
+# Durations
+length_night: 60 * 2 #s
+length_day: 60 * 15 #s
+
+# Warnings
+warn_night: 60 * 1.5 #s
+warn_day: 60 * 13 #s
+
+# Capacities
+min_players: 4
+max_players: 30
+
+# Grace periods
+grace_part: 7 #s
+grace_quit: 60 * 1/2 #s
