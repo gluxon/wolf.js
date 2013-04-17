@@ -1,8 +1,9 @@
 var irc = require('irc'); // IRC Client
 require('js-yaml'); // JavaScript YAML parser (for settings)
 
-// Import settings file
-var settings = require('./config/bot.yaml');
+// Gr__dirnameab configuration files
+var settings = require(__dirname + '/config/bot.yaml');
+var werewolf = require(__dirname + '/config/werewolf.yaml');
 
 var client = new irc.Client(settings.server, settings.nick, {
 	userName: settings.username,
@@ -20,3 +21,13 @@ client.addListener('raw', function (message) {
 		message.command + ' ' + message.args.join(' :') );
 	}
 });
+
+// The Locale handler
+var Locale = require(__dirname + '/components/locale.js');
+
+var locale = Locale.createInstance(__dirname + '/locales', '.yaml');
+locale.setLanguage(settings.language);
+
+setTimeout(function() {
+	console.log(locale.languages);
+}, 100);
