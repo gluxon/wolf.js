@@ -5,6 +5,7 @@ password:
 
 # Bot/User Information
 nick: jswolf
+username: jswolf
 mode: gluxon.com
 unused: unused
 realname: sherly
@@ -20,3 +21,5 @@ admins:
  - ~ceradon@wikimedia/Ceradon
  - ~mithadon@unaffiliated/mithadon
  - ishanyx@junethack/teamsplat/ishanyx
+
+language: en-US
