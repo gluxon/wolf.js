@@ -1,0 +1,27 @@
+# The Pirate Locale, arrrr
+
+# Roles
+seer: spyglass pirate
+wolf: rebel
+cursed: suspicious pirate
+drunk: drunk pirate
+harlot: pirate of love
+traitor: secret rebel
+gunner: technilogical pirate
+crow: rebel spy
+angel: guardian pirate
+detective: detective pirate
+villager: pirate
+
+# Roles (plural)
+seer_plural: spyglass pirates
+wolf_plural: rebels
+cursed_plural: suspicious pirates
+drunk_plural: drunk pirates
+harlot_plural: pirates of love
+traitor_plural: secret rebels
+gunner_plural: technilogical pirates
+crow_plural: rebel spies
+angel_plural: guardian pirates
+detective_plural: detective pirates
+villager_plural: pirates
