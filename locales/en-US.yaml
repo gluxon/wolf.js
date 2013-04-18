@@ -28,4 +28,17 @@ detective_plural: detectives
 ghost_pural: ghosts
 villager_plural: villagers
 
-start: $1$ has started a game of Werewolf. Type "!join" to join. Type "!start" to start the game. Type "!wait" to increase join wait time.
+# Game pre-start
+start: "_answer1_ has started a game of Werewolf. Type \"!join\" to join. Type \"!start\" to start the game. Type \"!wait\" to increase join wait time."
+game_wait: "Please wait at least _answer1_ more seconds."
+game_required: "_answer1_: Four or more players are required to play."
+game_welcome: "_answer1_: Welcome to Werewolf, the popular detective/social party game (a theme of Mafia)."
+
+# Game commands
+join: "_answer1_ has joined the game."
+quit: "_answer1_ died of an unknown disease. S/He was a $2$."
+lynch: "_answer1_ votes for $2$."
+lynch_night: "Lynching is only allowed during the day. Please wait patiently for morning."
+lynch_resting: "_answer1_: You are wounded and resting, thus you are unable to vote for the day."
+retract: "_answer1_ retracted his/her vote."
+retract_not: "You haven't voted yet."
