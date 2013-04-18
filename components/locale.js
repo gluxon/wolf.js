@@ -9,8 +9,6 @@ function createInstance(directory, extension) {
 }
 
 function Locale(directory, extension) {
-	self = this;
-
 	this.languages = [];
 
 	this.setDirectory(directory);
@@ -44,6 +42,8 @@ Locale.prototype.getLanguage = function() {
 }
 
 Locale.prototype.cullLangs = function() {
+	var self = this;
+
 	var directory = this.getDirectory();
 	var extension = this.getFileExtension();
 
