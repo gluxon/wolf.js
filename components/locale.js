@@ -48,7 +48,7 @@ Locale.prototype.cullLangs = function() {
 	var extension = this.getFileExtension();
 
 	fs.readdir(directory, function(err, files) {
-		if (err) console.err(err);
+		if (err) throw err;
 
 		for (var i = 0; i < files.length; i++) {
 			if (path.extname(files[i]) != extension) {
