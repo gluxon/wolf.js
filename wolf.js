@@ -6,6 +6,7 @@ var settings = require(__dirname + '/config/bot.yaml');
 var werewolf = require(__dirname + '/config/werewolf.yaml');
 
 var client = new irc.Client(settings.server, settings.nick, {
+	nick: settings.nick,
 	userName: settings.username,
 	realName: settings.realname,
 	port: settings.port,
@@ -28,6 +29,15 @@ var Locale = require(__dirname + '/components/locale.js');
 var locale = Locale.createInstance(__dirname + '/locales', '.yaml');
 locale.setLanguage(settings.language);
 
-setTimeout(function() {
-	console.log(locale.languages);
-}, 100);
+// The actual game
+var Werewolf = require(__dirname + '/game/index.js');
+
+var werewolf = Werewolf.createGame({
+	bot: settings,
+	irc: client,
+	channel: settings.channel,
+	admins: settings.admins,
+	locale: locale
+});
+
+//werewolf.start();
